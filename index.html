@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGIS - 2ª Fase Processo Seletivo Full Ambiental 2025</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
+          crossorigin=""/>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <h1 class="title">WebGIS com fotos da 2ª Fase do Processo Seletivo Full Ambiental 2025</h1>
+        </div>
+    </header>
+
+    <!-- Container principal -->
+    <main class="main">
+        <div class="container">
+            <!-- Mapa -->
+            <div id="map" class="map"></div>
+            
+            <!-- Informações -->
+            <div class="info-panel">
+                <div class="info-content">
+                    <h3>Informações do Projeto</h3>
+                    <p>Este WebGIS apresenta pontos georreferenciados com fotografias ambientais coletadas durante a 2ª Fase do Processo Seletivo Full Ambiental 2025.</p>
+                    <p><strong>Instruções:</strong> Clique nos marcadores no mapa para visualizar as fotos e descrições dos pontos de interesse.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 - WebGIS Ambiental | Desenvolvido para o Processo Seletivo Full Ambiental</p>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" 
+            crossorigin=""></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    
+    <!-- Mensagem de erro para arquivos locais -->
+    <script>
+        // Verificar se está sendo executado via file://
+        if (window.location.protocol === 'file:') {
+            document.getElementById('map').innerHTML = `
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; background: #f8f9fa; border-radius: 12px; color: #e74c3c; text-align: center; padding: 40px;">
+                    <div style="font-size: 4rem; margin-bottom: 20px;">⚠️</div>
+                    <h2 style="margin-bottom: 20px; color: #2c3e50;">Arquivo Aberto Localmente</h2>
+                    <p style="max-width: 500px; line-height: 1.6; margin-bottom: 20px;">
+                        Para visualizar o mapa, você precisa hospedar este projeto em um servidor web.
+                    </p>
+                    <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; border: 1px solid #27ae60; max-width: 400px;">
+                        <h3 style="color: #27ae60; margin-bottom: 15px;">🚀 Soluções Rápidas:</h3>
+                        <p style="margin-bottom: 10px;"><strong>1. GitHub Pages:</strong> Faça upload para o GitHub e ative o Pages</p>
+                        <p style="margin-bottom: 10px;"><strong>2. Netlify:</strong> Arraste a pasta para netlify.com</p>
+                        <p style="margin-bottom: 10px;"><strong>3. Local:</strong> Use um servidor web local</p>
+                    </div>
+                    <p style="margin-top: 20px; color: #7f8c8d; font-size: 0.9rem;">
+                        O projeto está pronto para GitHub Pages! 📁
+                    </p>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

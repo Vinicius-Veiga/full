@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Ponto 1 - Vegetação Nativa",
+        "descricao": "Área de vegetação nativa observada durante a vistoria. Presença de espécies arbóreas nativas da região, com destaque para a diversidade florística e estrutura do dossel. Local apresenta boa conservação e pode servir como referência para estudos de biodiversidade local.",
+        "imagem": "ponto1.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-47.061, -22.907]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Ponto 2 - Margem de Curso d'Água",
+        "descricao": "Margem de curso d'água com presença de reflorestamento. Área demonstra recuperação ambiental com plantio de espécies nativas. Observa-se a formação de mata ciliar e controle de erosão nas margens do córrego.",
+        "imagem": "ponto2.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-47.065, -22.911]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Ponto 3 - Área com Erosão",
+        "descricao": "Área com solo exposto e início de erosão superficial. Identificados processos erosivos em estágio inicial, com necessidade de implementação de medidas de controle. Recomenda-se monitoramento e aplicação de técnicas de conservação do solo.",
+        "imagem": "ponto3.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-47.058, -22.909]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Ponto 4 - Nascente Preservada",
+        "descricao": "Nascente de água com boa preservação e qualidade. Área apresenta vegetação nativa bem conservada ao redor da nascente, garantindo a proteção do manancial. Fundamental para a manutenção dos recursos hídricos da região.",
+        "imagem": "ponto4.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-47.063, -22.905]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Ponto 5 - Área de Transição",
+        "descricao": "Área de transição entre vegetação nativa e área antropizada. Local apresenta características mistas, com presença de espécies nativas e introduzidas. Importante para estudos de ecologia de paisagem e conectividade entre fragmentos.",
+        "imagem": "ponto5.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-47.067, -22.908]
+      }
+    }
+  ]
+}
